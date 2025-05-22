@@ -1,0 +1,79 @@
+name: 🤔 Question
+description: Ask a question about using the app
+title: "[QUESTION] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about Vision Board Bliss? We're here to help! Please provide some details so we can give you the best answer.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: ❓ Your Question
+      description: What would you like to know?
+      placeholder: I'm wondering how to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: 🎯 What You're Trying to Accomplish
+      description: What are you trying to do with the vision board app?
+      placeholder: I'm trying to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: attempted-solutions
+    attributes:
+      label: 🔍 What You've Already Tried
+      description: Have you tried anything already? Let us know so we don't suggest the same thing.
+      placeholder: I already tried...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: device-type
+    attributes:
+      label: 📱 Device Type (if relevant)
+      description: What device are you using?
+      options:
+        - Not relevant
+        - iPhone
+        - Android Phone
+        - iPad
+        - Android Tablet
+        - MacBook/Mac
+        - Windows PC
+        - Chromebook
+        - Other
+    validations:
+      required: false
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: 🌐 Browser (if relevant)
+      description: What browser are you using?
+      options:
+        - Not relevant
+        - Chrome
+        - Safari
+        - Firefox
+        - Edge
+        - Opera
+        - Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 📋 Additional Context
+      description: Any other details that might help us answer your question?
+      placeholder: Additional details...
+    validations:
+      required: false
