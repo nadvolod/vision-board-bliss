@@ -1,0 +1,86 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Your ideas help make Vision Board Bliss better for everyone.
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: 💡 Feature Description
+      description: A clear and concise description of the feature you'd like to see.
+      placeholder: I would love to see...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-opportunity
+    attributes:
+      label: 🎯 The Problem or Opportunity
+      description: What problem would this feature solve? Or what opportunity would it create?
+      placeholder: "Example: I want to stay motivated daily, but I forget to look at my vision board"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: 🚀 Proposed Solution
+      description: Describe your ideal solution.
+      placeholder: "Example: Add a daily notification feature that shows one image from my vision board"
+    validations:
+      required: true
+
+  - type: textarea
+    id: why-helpful
+    attributes:
+      label: 🌟 Why This Would Be Helpful
+      description: Explain how this feature would benefit you and other users.
+      placeholder: This would help because...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: platform
+    attributes:
+      label: 📱 Platform Considerations
+      description: Is this feature needed for...
+      options:
+        - label: Mobile (phone/tablet)
+        - label: Desktop/laptop
+        - label: Both mobile and desktop
+        - label: Doesn't matter
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🔥 Priority Level
+      description: How important is this feature to you?
+      options:
+        - Nice to have
+        - Would be really helpful
+        - Essential for my use case
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-ideas
+    attributes:
+      label: 🎨 Additional Ideas or Alternatives
+      description: Any other ideas or alternative approaches you've considered?
+      placeholder: Other ideas I had...
+    validations:
+      required: false
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: 📸 Examples or Mockups
+      description: If you have any sketches, mockups, or examples from other apps, feel free to describe them or attach images.
+      placeholder: I saw something similar in [app name] where...
+    validations:
+      required: false
