@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🌟 Try the Vision Board App
+    url: https://vision-board-bliss.lovable.app/
+    about: Experience the app before reporting issues or requesting features
+  - name: 📖 Read the Documentation
+    url: https://github.com/nadvolod/vision-board-bliss#readme
+    about: Check out the README for more information about the project
