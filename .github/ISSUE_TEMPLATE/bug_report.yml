@@ -1,0 +1,116 @@
+name: 🐛 Bug Report
+description: Something isn't working as expected
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the information below to help us fix it quickly.
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 🐛 Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe what's not working...
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-trying-to-do
+    attributes:
+      label: 🎯 What I Was Trying to Do
+      description: Tell us what you were attempting to accomplish when this bug occurred.
+      placeholder: I was trying to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: ✅ Expected Behavior
+      description: What did you expect to happen?
+      placeholder: I expected...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: ❌ What Actually Happened
+      description: What actually happened instead?
+      placeholder: Instead, what happened was...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: 🔄 Steps to Reproduce
+      description: Please provide step-by-step instructions
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device-type
+    attributes:
+      label: 📱 Device Type
+      description: What device are you using?
+      options:
+        - iPhone
+        - Android Phone
+        - iPad
+        - Android Tablet
+        - MacBook/Mac
+        - Windows PC
+        - Chromebook
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: 🌐 Browser
+      description: What browser are you using?
+      options:
+        - Chrome
+        - Safari
+        - Firefox
+        - Edge
+        - Opera
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: 🔄 How Often Does This Happen?
+      description: Does this happen every time or just sometimes?
+      options:
+        - Every time
+        - Sometimes
+        - Only happened once
+        - Not sure
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 📋 Additional Context
+      description: |
+        Add any other context about the problem here:
+        - Any error messages you see?
+        - Did this work before?
+        - Anything else that might be helpful?
+      placeholder: Any additional details...
+    validations:
+      required: false
